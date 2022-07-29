@@ -22,9 +22,11 @@ class PersonsListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Persons List"
         view.addSubview(tableView)
         tableView.dataSource = self
         tableView.delegate = self
+        
         print("test")
     }
     
@@ -51,10 +53,13 @@ extension PersonsListViewController: UITableViewDataSource, UITableViewDelegate 
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("\(indexPath.row) data \(personsArray[indexPath.row].name)")
-        /* go to another page
-        let vc = UIViewController()
+        let vc = DetailInformationViewController()
+        vc.email = personsArray[indexPath.row].email
+        vc.phoneNumber = personsArray[indexPath.row].phoneNumber
+        vc.titlePage = personsArray[indexPath.row].name + " " + personsArray[indexPath.row].surname
+        tableView.deselectRow(at: indexPath, animated: true)
         navigationController?.pushViewController(vc, animated: true)
-         */
+        
     }
     
    
