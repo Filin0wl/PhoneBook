@@ -68,8 +68,8 @@
 				12CD37F128916EC6007A5749 /* Models */,
 				12A3EDD8289158E60091A5BB /* Supporting Files */,
 				12CD37EF28915A94007A5749 /* Storyboards */,
-				12CD37EE28915A66007A5749 /* Resources */,
 				12CD37F028915A9F007A5749 /* ViewControllers */,
+				12CD37EE28915A66007A5749 /* Resources */,
 			);
 			path = PhoneBook;
 			sourceTree = "<group>";
