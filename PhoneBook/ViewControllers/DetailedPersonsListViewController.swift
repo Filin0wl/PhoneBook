@@ -13,7 +13,7 @@ class DetailedPersonsListViewController: UIViewController {
     private let personsArray = DataManager.getDetailPersonData()
     
     private let tableView: UITableView = {
-        let table = UITableView(frame: .zero, style: .grouped)
+        let table = UITableView()
         table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         return table
     }()
@@ -21,8 +21,15 @@ class DetailedPersonsListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addSubview(tableView)
+        tableView.dataSource = self
+        tableView.delegate = self
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        tableView.frame = view.bounds
+    }
 }
 
 //MARK: - Extension
@@ -40,6 +47,7 @@ extension DetailedPersonsListViewController: UITableViewDelegate, UITableViewDat
         let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
         let person = personsArray[indexPath.section].phoneNumberEmail[indexPath.row]
         cell.textLabel?.text = person
+        cell.selectionStyle = .none
         return cell
     }
     
