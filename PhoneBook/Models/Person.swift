@@ -13,13 +13,11 @@ struct Person {
     let email: String
     let phoneNumber: String
     
-    static func getData() -> [Person] {
-        var list = [Person]()
-        let data = DataManager()
-        for _ in 0...8 {
-            let personToAdd = Person(name: data.names.randomElement()!, surname: data.surnames.randomElement()!, email: data.emails.randomElement()!, phoneNumber: data.phoneNumbers.randomElement()!)
-            list.append(personToAdd)
-        }
-        return list
-    }
+    
+}
+
+struct PersonDetail {
+    let name: String
+    let surname: String
+    let phoneNumberEmail: [String]
 }

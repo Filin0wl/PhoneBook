@@ -10,7 +10,7 @@ import UIKit
 class PersonsListViewController: UIViewController {
     
     //MARK: - Properties
-    private let personsArray = Person.getData()
+    private let personsArray = DataManager.getPersonsData()
     
     private let tableView: UITableView = {
         let table = UITableView()
@@ -26,8 +26,6 @@ class PersonsListViewController: UIViewController {
         view.addSubview(tableView)
         tableView.dataSource = self
         tableView.delegate = self
-        
-        print("test")
     }
     
     override func viewDidLayoutSubviews() {

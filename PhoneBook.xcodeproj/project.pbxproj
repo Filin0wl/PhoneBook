@@ -16,6 +16,7 @@
 		12CD37F62891762F007A5749 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CD37F52891762F007A5749 /* DataManager.swift */; };
 		12CD38002893CFAF007A5749 /* DetailInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CD37FE2893CFAF007A5749 /* DetailInformationViewController.swift */; };
 		12CD38012893CFAF007A5749 /* DetailInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12CD37FF2893CFAF007A5749 /* DetailInformationViewController.xib */; };
+		12CD38052893FA83007A5749 /* DetailedPersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CD38042893FA83007A5749 /* DetailedPersonsListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		12CD37F52891762F007A5749 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		12CD37FE2893CFAF007A5749 /* DetailInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInformationViewController.swift; sourceTree = "<group>"; };
 		12CD37FF2893CFAF007A5749 /* DetailInformationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailInformationViewController.xib; sourceTree = "<group>"; };
+		12CD38042893FA83007A5749 /* DetailedPersonsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedPersonsListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			children = (
 				12A3EDC8289158BD0091A5BB /* PersonsListViewController.swift */,
 				12CD37FE2893CFAF007A5749 /* DetailInformationViewController.swift */,
+				12CD38042893FA83007A5749 /* DetailedPersonsListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				12A3EDC5289158BD0091A5BB /* AppDelegate.swift in Sources */,
 				12CD37F328916EE6007A5749 /* Person.swift in Sources */,
 				12A3EDC7289158BD0091A5BB /* SceneDelegate.swift in Sources */,
+				12CD38052893FA83007A5749 /* DetailedPersonsListViewController.swift in Sources */,
 				12CD38002893CFAF007A5749 /* DetailInformationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
