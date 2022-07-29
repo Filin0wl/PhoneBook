@@ -22,9 +22,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let personalList = PersonsListViewController()
         let navigationController = UINavigationController(rootViewController: personalList)
-        
         navigationController.tabBarItem = UITabBarItem(title: "Contacts", image: UIImage(named: "contacts"), selectedImage: nil)
-        tabViewController.viewControllers = [navigationController]
+        
+        let detailPersonsList = DetailedPersonsListViewController()
+        detailPersonsList.tabBarItem = UITabBarItem(title: "Contacts", image: UIImage(named: "contacts"), selectedImage: nil)
+        
+        tabViewController.viewControllers = [navigationController, detailPersonsList]
         window.rootViewController = tabViewController
         self.window = window
         window.makeKeyAndVisible()
